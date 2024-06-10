@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "transferpix",
+  "private_key_id": "7708007e6af3fcc7dd68a3bf7cd1ee0ccafadbc9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCQzzm1JjYnx4Lz\nHGHqN93FDENwLdItwJ3qdsr9axT84bGIh5e3+QMr1IsweqS6R+Aj1XOW6T9GlS3U\nHhdepdvQXxdl9eovRLG9lhu++G/jpWT8U21oFHyMe8kFQF/Z4W6E1Cg13jCIY38F\npT2kiV26EF+OjQxFonA6NjLvFuKB9Rx09TysqEwFgstTeBsYPQt6dTdDdEqyfyCn\neeNPh/3Svg3XiHAxVkT1eKNnoLIa94QwbtUFPWzDXc3kvyVopKTqMMC8DvlsykdV\nZnsX2qz1Y5xytG6oH5mQMXeJg5DwLVC+W/WG6h6d9yIgN1jn5OGiLUYPRJdnpc26\nntL3ILFFAgMBAAECggEAAvlelAve3N5KIDgbArZ3BY8E647lXC8yjxg1fxLt8Wup\nO8adJRgmKoZI/YvnSjQjtFiz8QuFUyvJLywXCsiZRSRO1LdCQgpFJEGq/DcaBTDm\nbBBClPqmvDPmowb5cP4iSPQah1Cy6nowp6sHIxP3KtUfQUxATkXRzEBEt4heypB4\nQ/pQHVbY4inYS6YaQC4HEu3FrCAa0/65Bm6aNWKEbowq4QXO5V+/UUqZagpTcjir\nx6pXcUFdGDthuB83cSF/Vo3JSclpK1ckxAe1MNyhHqJVLYliX0r3ymb5iecnpHpU\nH4wxKJArR/q7Ha+CXSlLfDbsrcrLk804Q4AxRIcPWQKBgQDKXFtUOXyFh2fMtw60\nOAW5+qwl9VedNRDmiV+7NieBDIbG9x/OeH61ctyT/1ttNqegptzEp+2cHjYZZUKc\nrPwytyry2qN+g9ZbgZeJZKANQolBTg6po7PQLhL5PhRjUlcD+5NF6HPfbjYNAM/a\nbCYcXCOzO+S/t0HYazLDt22IlwKBgQC3MZi/0JAnreVF1upfNuQn2urOwcq2maoi\nUGJO5qXAqTFMvIWOelYZAzItt3C7FoAymACLr7PKQWc9Jq2v2MTiyK5YbCC+GHEM\nUT7tBvK7/MCGiDOryHIMEheoWcHO+F/iqBjQMEcbyElu0IufEa6r4YmYA8iRlZyf\nlhZTlNgUgwKBgGseoKnhFG2K1AOmE36K+V0NuPsO+KYbZSrkJWzwqdDCVMYWIxwk\n5M4gU2t0jW0utWVxbwQa8MjnpTOkSrKtT4N5Op775fgeyeX+n7z3K1JZmlabf1+F\nbLYS7bBKkHhTKgTNs5QaDNyFds9DUsQI49O3Yp6KYfiqhYyOknzQKIdZAoGBALLP\njVpFGEAyw6Ssxy3S5VZln2Xa0KP1T5SYw6xiA44PV5igNvjAPoPBk9v9vuJObylz\nJq0x/hrARiXxN/15Z4w497xFJpyGPOoZ74LqkkmdxspJ7a2SRIe1rTPdEIiV9PnG\nvBmR1gavM8Yfdvj4CHeq+GPR5Zb84tj+ZaKFmXhDAoGBAMlmtBhvRf9R1AiuE0NO\njN9d2ou4TATZ6gCDDqj4yyRvKpLitJFquOl4430OXSzyedNyR8IWWUge3UjhftlT\n0FcIcQNbQ+n+yVX9L6dwXknzJeU6ezhAyR6ZEc7PC5JL8OA0ccQ5umBDOQmVIzy/\n/iwikmMjJ73eJcvgEu4M3eBs\n-----END PRIVATE KEY-----\n",
+  "client_email": "transferpix-storageacc@transferpix.iam.gserviceaccount.com",
+  "client_id": "117737992372287393707",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/transferpix-storageacc%40transferpix.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
