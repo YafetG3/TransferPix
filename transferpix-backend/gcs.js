@@ -22,13 +22,17 @@ const uploadFile = async (file) => {
 
   return new Promise((resolve, reject) => {
     blobStream.on('finish', async () => {
-      // Generate a signed URL for the uploaded file
-      const [url] = await blob.getSignedUrl({
-        action: 'read',
-        expires: '03-01-2500', // Set expiration as needed
-      });
-      console.log('Upload finished:', url);
-      resolve(url);
+      try {
+        const [url] = await blob.getSignedUrl({
+          action: 'read',
+          expires: '03-01-2500',
+        });
+        console.log('Upload finished:', url);
+        resolve(url);
+      } catch (err) {
+        console.error('Error generating signed URL:', err);
+        reject(err);
+      }
     });
 
     blobStream.on('error', (err) => {

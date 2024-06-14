@@ -30,8 +30,9 @@ const Upload = () => {
           setUploadProgress(percentCompleted);
         },
       });
-      setGalleryUrl(response.data);
-      navigate('/gallery', { state: { files: response.data } });
+
+      setGalleryUrl(response.data.url);
+      navigate('/gallery', { state: { files: response.data.files } });
       alert('Files uploaded successfully');
     } catch (error) {
       console.error('Upload failed:', error);
@@ -48,7 +49,7 @@ const Upload = () => {
         <li>Click on the "Upload" button to start uploading your photos.</li>
         <li>Once uploaded, you will see a gallery URL and a QR code to view your photos.</li>
       </ol>
-      <input type="text" placeholder="Name goes here" className="name-input" />
+
       <input type="file" onChange={handleFileChange} multiple className="file-input" />
       <button onClick={handleUpload} className="upload-button">Upload</button>
       {uploadProgress > 0 && (

@@ -1,34 +1,41 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import QRCode from 'qrcode.react';
+import './Gallery.css';
 
 const Gallery = () => {
-  const { id } = useParams();
-  const [urls, setUrls] = useState([]);
+  const location = useLocation();
+  const { files } = location.state || [];
+  const [galleryUrls, setGalleryUrls] = useState([]);
+  const [currentUrl, setCurrentUrl] = useState('');
 
   useEffect(() => {
-    const fetchUrls = async () => {
-      try {
-        const response = await axios.get(`http://localhost:5000/gallery/${id}`);
-        setUrls(response.data);
-      } catch (error) {
-        console.error('Failed to fetch gallery:', error);
-      }
-    };
-    fetchUrls();
-  }, [id]);
+    if (files && files.length > 0) {
+      const urls = files.map(file => file.url);
+      setGalleryUrls(urls);
+      setCurrentUrl(window.location.href); // Get the current URL
+    }
+  }, [files]);
 
   return (
-    <div>
-      <h1>Gallery</h1>
-      {urls.length > 0 ? (
-        urls.map((url, index) => (
-          <div key={index}>
-            <img src={url} alt={`Uploaded ${index}`} style={{ width: '200px', margin: '10px' }} />
-          </div>
-        ))
-      ) : (
-        <p>Loading...</p>
+    <div className="gallery-container">
+      <h1>Your Gallery</h1>
+      <ul>
+        {galleryUrls.length > 0 ? (
+          galleryUrls.map((url, index) => (
+            <li key={index}>
+              <img src={url} alt={`Image ${index + 1}`} style={{ width: '200px', height: 'auto' }} />
+            </li>
+          ))
+        ) : (
+          <p>Loading your gallery...</p>
+        )}
+      </ul>
+      {currentUrl && (
+        <div className="qr-code">
+          <h3>Scan the QR code to view the gallery on your phone:</h3>
+          <QRCode value={currentUrl} />
+        </div>
       )}
     </div>
   );
