@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 // Enable CORS for all routes
 app.use(cors());
 
-const keyFilePath = path.join(__dirname, 'transferpix-7708007e6af3.json');
+const keyFilePath = path.join(__dirname, 'transferpix-76682b31086f.json');
 
 const storage = new Storage({ keyFilename: keyFilePath });
 const bucket = storage.bucket('transferpix-yafet');
